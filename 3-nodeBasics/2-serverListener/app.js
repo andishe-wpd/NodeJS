@@ -18,7 +18,7 @@ const http = require('http')
 
 
 const server = http.createServer((request, response)=>{
-    console.log(request)
+    console.log(request.headers, request.url, request.method)
 })  // this needs a request listener so make it
 
 
