@@ -15,9 +15,7 @@ const server = http.createServer((request, response) => {
     response.setHeader("conten-type", "text/html");
     response.write("<html>");
     response.write("<head><title>not found </title></head>");
-    response.write(
-      "<body><hr/><p>cant find the page you lookin for </p></body>"
-    );
+    response.write("<body><p>cant find the page you lookin for </p></body>");
     response.write("</html>");
     response.end();
   }
