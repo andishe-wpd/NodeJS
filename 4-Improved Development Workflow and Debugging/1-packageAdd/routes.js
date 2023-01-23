@@ -41,7 +41,7 @@ const routes = (request, response) => {
   } else {
     response.write("<html>");
     response.write("<head><title>not found </title></head>");
-    response.write("<body><p>cant find the page you lookin for </p></body>");
+    response.write("<body><p>cant find the page you lookin for you </p></body>");
     response.write("</html>");
     return response.end();
   }
