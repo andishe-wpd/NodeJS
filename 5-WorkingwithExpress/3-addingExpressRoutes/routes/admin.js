@@ -13,7 +13,7 @@ router.post("/added-product", (request, response, next) => {
   // app.put("/added-product", (request, response, next) => {
   // app.patch("/added-product", (request, response, next) => {
   // app.update("/added-product", (request, response, next) => {
-//   console.log(request.body);
+  //   console.log(request.body);
   response.redirect("/");
 });
 
