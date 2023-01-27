@@ -9,7 +9,7 @@ const notFound = require('./routes/404')
 
 app.use(index)
 app.use(user)
-app.use(admin)
+app.use('/admin',admin)
 app.use(notFound)
 
 app.listen(3000);
