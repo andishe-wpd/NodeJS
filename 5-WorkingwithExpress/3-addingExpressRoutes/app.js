@@ -7,7 +7,7 @@ const notFound = require("./routes/404");
 
 app.use(bodyParser.urlencoded({ extende: false }));
 
-app.use(adminRout);
+app.use('/admin',adminRout);
 app.use(shoppingPage);
 app.use(notFound);
 
