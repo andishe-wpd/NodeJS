@@ -2,7 +2,7 @@
   "name": "coursereviewsofar",
   "version": "1.0.0",
   "description": "this is a package json file for my course reveiw",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start" : "nodemon "
