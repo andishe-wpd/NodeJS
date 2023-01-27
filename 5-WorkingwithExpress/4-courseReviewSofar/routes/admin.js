@@ -1,5 +1,5 @@
 const express = require("express");
-
+const fs = require("fs");
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -12,7 +12,10 @@ router.get("/add-product", (req, res) => {
 });
 router.post("/add-product-result", (request, response) => {
   console.log(request.body);
-  response.redirect("/");
+
+  fs.writeFile(request.body.title, request.body.title, () => {
+    response.redirect("/");
+  });
   // res.send('<h1>adminresult page</h1>')
 });
 
