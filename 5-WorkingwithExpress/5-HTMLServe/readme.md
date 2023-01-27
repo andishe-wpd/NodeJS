@@ -1,0 +1,3 @@
+- write a helper command for root path
+- serve external html file using app.sendFile()
+- using express statinc serve using express.static(path.join(rootpath,'public'))
