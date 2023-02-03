@@ -14,6 +14,9 @@ task and worklog:
 - init nodemon                                          done 
 - init express                                          done
 - run an express server on port 3000                    done
-- init bodyparser
-- add express router
-- home(get), order(get, post(redirect to home))         
+- add express router                                    done
+- init bodyparser                                       done
+- home(get), order(get, post(redirect to home))         done
+- handle a post request                                 done
+- make a file base on a post request                    done
+- create external css source for an html file           
