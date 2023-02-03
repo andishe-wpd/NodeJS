@@ -1,10 +1,17 @@
 // console.log("404 js file connected");
 // alert('alert from 404 js file')
-
-const dynamicContent = document.getElementById("dynamic404content");
 let initNumber = 30;
-let allowRedirection = false;
 
+let allowRedirection = true;
+const dynamicContent = document.getElementById("dynamic404content");
+const counterStopper = document.getElementById("counterStopper");
+
+counterStopper.addEventListener("click", () => {
+  allowRedirection = !allowRedirection;
+  if (allowRedirection) {
+    countdown();
+  }
+});
 const countdown = () => {
   countDownInterval = setInterval(() => {
     if (allowRedirection) {
