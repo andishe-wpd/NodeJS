@@ -10,7 +10,8 @@
 
 
 task and worklog:
-- init a node package.json  done
-- init nodemon
-- init express
+- init a node package.json                  done
+- init nodemon                              done 
+- init express                              done
+- run an express server on port 3000        done
 - 
