@@ -20,4 +20,5 @@ task and worklog:
 - handle a post request                                 done
 - make a file base on a post request                    done
 - create external css source for an html file           done
-- add 404 page fallback                                 
+- add 404 page fallback                                 done
+- add a js countdown on 404 page then redirect                               
