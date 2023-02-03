@@ -19,4 +19,5 @@ task and worklog:
 - home(get), order(get, post(redirect to home))         done
 - handle a post request                                 done
 - make a file base on a post request                    done
-- create external css source for an html file        
+- create external css source for an html file           done
+- add 404 page fallback                                 
