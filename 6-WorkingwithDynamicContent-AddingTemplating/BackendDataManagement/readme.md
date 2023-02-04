@@ -9,4 +9,5 @@
 - use dynamic content in pug file                                   done
 - render list base on an array data in a pug file                   done
 - conditions in pug file                                            done
-- adding reusable layout (extends & block)                          
+- adding reusable layout (extends & block)                          done
+- 
