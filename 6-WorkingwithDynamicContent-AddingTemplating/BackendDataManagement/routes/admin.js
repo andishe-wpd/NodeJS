@@ -10,13 +10,13 @@ const productData = [];
 // /admin/add-product => GET
 router.get("/add-product", (req, res, next) => {
   // res.sendFile(path.join(rootDir, "views", "add-product.html"));
-  res.render(path.join(rootDir, "views", "add-product"));
+  res.render("add-product");
 });
 
 // /admin/add-product => POST
 router.post("/add-product", (req, res, next) => {
   // console.log(req.body);
-  productData.push({title: req.body.title})
+  productData.push({ title: req.body.title });
   res.redirect("/");
 });
 
