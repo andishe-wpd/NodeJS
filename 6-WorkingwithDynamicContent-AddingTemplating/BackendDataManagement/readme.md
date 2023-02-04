@@ -5,4 +5,7 @@
 - set default views rout and folder name                            done
 - turn html to pug file                                             done
 - render pug file instead of html files                             done
-- outputing the dynamic content                                                             
+- pass the dynamic content to pug file                                                             
+- use dynamic content in pug file
+- render list base on an array data in a pug file 
+- conditions in pug file                    
