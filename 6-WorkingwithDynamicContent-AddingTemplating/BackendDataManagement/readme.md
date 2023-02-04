@@ -7,5 +7,6 @@
 - render pug file instead of html files                             done
 - pass the dynamic content to pug file                              done                           
 - use dynamic content in pug file                                   done
-- render list base on an array data in a pug file 
-- conditions in pug file                    
+- render list base on an array data in a pug file                   done
+- conditions in pug file                                            done
+- adding reusable layout (extends & block)                          
