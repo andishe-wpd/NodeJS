@@ -5,11 +5,12 @@ const express = require("express");
 const rootDir = require("../util/path");
 
 const router = express.Router();
-const productData = require("./admin");
+const {productData} = require("./admin");
 
 router.get("/", (req, res, next) => {
   // res.sendFile(path.join(rootDir, "views", "shop.html"));
-  res.render("shop");
+  console.log(productData)
+  res.render("shop", {productsList: productData , pageTitle: "SHOP"});
 });
 
 module.exports = router;
