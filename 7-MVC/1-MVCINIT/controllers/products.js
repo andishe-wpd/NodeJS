@@ -1,4 +1,5 @@
-const { products } = require("./users");
+const productModel = require('../model/product')
+const products = productModel.fetchAll()
 
 
 exports.addProductController = (req, res, next) => {
