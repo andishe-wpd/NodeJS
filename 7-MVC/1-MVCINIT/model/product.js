@@ -1,19 +1,21 @@
 const products = [];
-
 const fs = require("fs");
 const path = require("path");
 const rootPath = require("../util/path");
 
+const getProductFromFile = (cb) => {
+  const p = path.join(rootPath, "data", "products.json");
+  fs.readFile(p, (err, fileContent) => {
+    return cb(err, fileContent);
+  });
+};
+const p = path.join(rootPath, "data", "products.json");
 module.exports = class Product {
   constructor(t) {
     this.title = t;
   }
   save() {
-    // this will do the database stuff
-
-    // first read the data
-    const p = path.join(rootPath, "data", "products.json");
-    fs.readFile(p, (err, fileContent) => {
+    getProductFromFile((err, fileContent) => {
       let product = [];
       if (!err) {
         product = JSON.parse(fileContent);
@@ -23,15 +25,11 @@ module.exports = class Product {
         console.log(err);
       });
     });
-
-    // scnd wirte the data
-
     products.push(this);
   }
 
   static fetchAll(callbackFunctionHandler) {
-    const p = path.join(rootPath, "data", "products.json");
-    fs.readFile(p, (err, fileContent) => {
+    getProductFromFile((err, fileContent) => {
       if (err) {
         return callbackFunctionHandler([]);
       }
