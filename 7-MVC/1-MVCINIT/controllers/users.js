@@ -1,12 +1,15 @@
 const productModel = require("../model/product");
-const products = productModel.fetchAll();
+console.log(productModel.fetchAll)
+
 exports.shopviewController = (req, res, next) => {
-  res.render("shop", {
-    prods: products,
-    pageTitle: "Shop",
-    path: "/",
-    hasProducts: products.length > 0,
-    activeShop: true,
-    productCSS: true,
+  productModel.fetchAll((product) => {
+    res.render("shop", {
+      prods: product,
+      pageTitle: "Shop",
+      path: "/",
+      hasProducts: product.length > 0,
+      activeShop: true,
+      productCSS: true,
+    });
   });
 };

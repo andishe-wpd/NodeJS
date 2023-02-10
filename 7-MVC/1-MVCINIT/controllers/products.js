@@ -1,6 +1,4 @@
-const productModel = require('../model/product')
-const products = productModel.fetchAll()
-
+const productModel = require("../model/product");
 
 exports.addProductController = (req, res, next) => {
   res.render("add-product", {
@@ -13,6 +11,7 @@ exports.addProductController = (req, res, next) => {
 };
 
 exports.postAddproductController = (req, res, next) => {
-  products.push({ title: req.body.title });
+  const products = new productModel(req.body.title);
+  products.save();
   res.redirect("/");
 };
