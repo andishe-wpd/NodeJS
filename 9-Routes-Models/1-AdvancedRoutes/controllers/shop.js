@@ -9,6 +9,14 @@ exports.getProducts = (req, res, next) => {
     });
   });
 };
+exports.getSingleProduct = (req, res, next) => {
+  id = (req.params.productID);
+  Product.findProduct(id , (data)=>{
+    console.log(data)
+
+  })
+  res.redirect("/");
+};
 
 exports.getIndex = (req, res, next) => {
   Product.fetchAll(products => {
